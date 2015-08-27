@@ -3,6 +3,10 @@
 This is a project management tool that allows you to create boards and add notes to those boards. 
 Notes can then be moved from one board to another.
 
+## Demo
+
+[Demo](https://3-strand-code.github.io/jon-pool/)
+
 ## Setup
 
 1. Install node.js
