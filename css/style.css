@@ -5,6 +5,10 @@ body{
 section{
     background-color: #6495ED;
     width: 30%;
+    min-height: 100px;
+    min-width: 200px;
+    display: block;
     float: left;
     margin-right: 3%;
+    margin-bottom: 10px;
 }
