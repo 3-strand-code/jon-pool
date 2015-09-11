@@ -1,7 +1,9 @@
 /**
- * Created by Jon on 8/23/2015.
+ * Created by Jon on 9/10/2015.
  */
-angular.module('cardApp', [])
+angular.module('App', [
+    'App.Card'
+])
     .controller('CardListController', function() {
         var cardList = this;
         cardList.cards = [
@@ -10,5 +12,4 @@ angular.module('cardApp', [])
             {text:'Card 2', notes:[{noteText:'text 1'},{noteText:'text 2'}]},
             {text:'Card 3', notes:[{noteText:'text 1'},{noteText:'text 2'}]}
         ]
-
     });
