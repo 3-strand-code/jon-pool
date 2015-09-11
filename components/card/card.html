@@ -1,0 +1,13 @@
+<div class="col-sm-4 col-md-3" >
+    <div class="panel">
+        <div class="panel-heading">
+            <!-- TODO: finish converting copied index html to a directive -->
+            {{card.text}}
+        </div>
+        <div class="panel-body" ng-repeat="note in card.notes" id="note">
+            <div class="note">
+                {{note.noteText}}
+            </div>
+        </div>
+    </div>
+</div>

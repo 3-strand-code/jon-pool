@@ -21,19 +21,9 @@
         <h2>Project Name</h2>
     </header>
 
-    <div class="row">
-        <div class="col-sm-4 col-md-3" ng-repeat="card in cardList.cards">
-            <div class="panel">
-                <div class="panel-heading">
-                    {{card.text}}
-                </div>
-                <div class="panel-body" ng-repeat="note in card.notes" id="note">
-                    <div class="note">
-                        {{note.noteText}}
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div>
+        <!-- TODO: finish this directive -->
+        <Card data="card" ng-repeat="card in cardList.cards"></Card>
     </div>
 </div>
 
