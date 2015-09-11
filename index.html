@@ -2,25 +2,49 @@
 <html ng-app="cardApp">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
     <script src="scripts/card.js"></script>
 </head>
 
 <body>
-<header>
-    <h1>Jon Pool</h1>
+<!--<header>-->
+    <!--<h1>Jon Pool</h1>-->
 
-    <h2>Project Name</h2>
-</header>
+    <!--<h2>Project Name</h2>-->
+<!--</header>-->
 
-<div ng-controller="CardListController as cardList">
-    <section ng-repeat="card in cardList.cards">
-        <h2>{{card.text}}</h2>
-        <div ng-repeat="note in card.notes" id="note">
-            <p>{{note.noteText}}</p>
+<!--<div ng-controller="CardListController as cardList">-->
+    <!--<section ng-repeat="card in cardList.cards">-->
+        <!--<h2>{{card.text}}</h2>-->
+        <!--<div ng-repeat="note in card.notes" id="note">-->
+            <!--<p></p>-->
+        <!--</div>-->
+    <!--</section>-->
+<!--</div>-->
+
+<!--<hr/>-->
+
+<div class="container" ng-controller="CardListController as cardList">
+    <h1>test</h1>
+    <div class="row">
+        <div class="col-sm-4 col-md-3" ng-repeat="card in cardList.cards">
+            <div class="panel">
+                <div class="panel-heading">
+                    {{card.text}}
+                </div>
+                <div class="panel-body" ng-repeat="note in card.notes" id="note">
+                    <div class="note">
+                        {{note.noteText}}
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 </div>
 
 <footer></footer>
