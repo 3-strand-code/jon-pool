@@ -15,7 +15,12 @@
 </header>
 
 <div ng-controller="CardListController as cardList">
-    <section ng-repeat="card in cardList.cards">{{card.text}}</section>
+    <section ng-repeat="card in cardList.cards">
+        <h2>{{card.text}}</h2>
+        <div ng-repeat="note in card.notes" id="note">
+            <p>{{note.noteText}}</p>
+        </div>
+    </section>
 </div>
 
 <footer></footer>
